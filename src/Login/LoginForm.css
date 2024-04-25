@@ -1,0 +1,31 @@
+.Loginform {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    /* Optional: Add shadow for depth */
+}
+.input{
+    margin-top: 10px;
+    height: 25px;
+}
+.btnLogin{
+    margin-top: 10px;
+    background: red;
+    border-style: none;
+    border-radius: 8px;
+    width: 100px;
+    height: 25px;
+    color: white;
+
+}

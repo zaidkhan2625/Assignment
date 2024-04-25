@@ -1,0 +1,85 @@
+.maindivdashboard{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 50px;
+    background: red;
+    margin-right: 150px;
+    padding: 0px;
+    height: 100vh;
+}
+.partone{
+    display: flex;
+    flex-direction: row;
+}
+.counterSide{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin-left: 20px;
+    margin-top: 15px;
+    background: #f2f1f1;
+    min-height: 240px;
+}
+.textside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 20px;
+    margin-top: 15px;
+    background: #979696;
+    margin-right: 20px;
+}
+.divcolorfill{
+  
+  
+    border-radius: 5px;
+    background: #000;
+    
+}
+.divforcolor{
+    margin-top: 20px;
+    width: 96%;
+    background: #000;
+    margin-right: 20px;
+    margin-left: 20px;
+    height: 40px;
+    border-radius: 5px;
+}
+.AdressDetails{
+   width: 50%;
+   background: #fefafa;
+   margin-left: 20px;
+   margin-right: 20px;
+   margin-top: 15px;
+   
+   padding-right: 10px;
+   padding-bottom: 10px;
+}
+.Userside{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    background: #fefafa;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.formDetailindash{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.userdata{
+    display: flex;
+    flex-direction: column;
+}
+.userdata input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
