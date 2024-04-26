@@ -145,6 +145,8 @@
         
         margin-left: 10px;
         margin-right: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .counterSide {
         width: 90%;
@@ -155,6 +157,7 @@
     }
     .Userside{
         width: 90%;
+        padding-bottom: 20px;
     }
   .AdressDetails{
        width:  90%;
@@ -163,7 +166,7 @@
         margin-top: 20px;
        
         background: #000;
-    margin: 0px;
+    
         height: 40px;
         margin-left: 13px;
         border-radius: 5px;
