@@ -26,8 +26,9 @@ function LoginForm() {
 
   return (
     <div className='Loginform'>
+    
+      <form onSubmit={handleSubmit} className='loginformstyle'>
       <h1>Login</h1>
-      <form onSubmit={handleSubmit}>
         <input
           type="text"
           name="username"

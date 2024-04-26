@@ -12,17 +12,26 @@ function SignUpform() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    
+    // Check if username or password is empty
+    if (!formData.username || !formData.password) {
+      alert("Please fill in all fields");
+      return; // Stop form submission
+    }
+  
     // Save user data to local storage
     localStorage.setItem("user", JSON.stringify(formData));
     // Redirect to login page
     navigate("/login");
   };
+  
 
   return (
    <div className="homepg">
      <div className="signupform">
-      <h1>Sign Up</h1>
+
       <form onSubmit={handleSubmit} className="formDetail">
+      <h1>Sign Up</h1>
         <input
           type="text"
           name="username"

@@ -1,19 +1,19 @@
 .maindivdashboard {
     display: flex;
     flex-direction: column;
-    margin-top: 10px;
-    margin-left: 50px;
     background: rgb(238, 237, 237);
-    margin-right: 150px;
-    padding: 0px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 20px;
     height: 100vh;
 }
-
+.inputfeild{
+    background: white;
+}
 .partone {
     display: flex;
     flex-direction: row;
 }
-
 .counterSide {
     display: flex;
     align-items: center;
@@ -22,10 +22,32 @@
     width: 50%;
     margin-left: 20px;
     margin-top: 15px;
-    background: #f2f1f1;
-    min-height: 240px;
+    background: #b3f77b;
+    min-height: 140px;
+    border-radius: 8px;
 }
-
+.btnincre{
+    margin-right: 5px;
+    height: 25px;
+    border-style: none;
+    border-radius: 8px;
+    background-color: rgb(104, 148, 244);
+    color: white;
+    cursor: pointer;
+}
+.btnincre :hover{
+    background: aquamarine;
+}
+.btnforit{
+    background: #5eaded;
+    height: 25px;
+    border-radius: 8px;
+    margin-right: 5px;
+    border-style: none;
+    color: white;
+    cursor: pointer;
+    width: 90px;
+}
 .textside {
     display: flex;
     justify-content: center;
@@ -34,8 +56,10 @@
     width: 50%;
     margin-left: 20px;
     margin-top: 15px;
-    background: #f9dede;
+    background: #da81f5;
     margin-right: 20px;
+    border-radius: 8px;
+    color: rgb(33, 32, 32);
 }
 
 .divcolorfill {
@@ -58,13 +82,14 @@
 
 .AdressDetails {
     width: 50%;
-    background: #fefafa;
+    background: #fc2fbf;
     margin-left: 20px;
     margin-right: 20px;
-    margin-top: 15px;
-
+    margin-top: 20px;
+    border-radius: 9px;
     padding-right: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
+    
 }
 
 .Userside {
@@ -72,16 +97,27 @@
     /* justify-content: center; */
     align-items: center;
     flex-direction: column;
+    justify-content: center;
     width: 50%;
-    background: #fefafa;
+    background: #b9f63e;
     margin-left: 20px;
-    margin-top: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
 }
-
+.uniqueidforid{
+    background: red;
+    height: 25px;
+    border-style: none;
+    border-radius: 8px;
+    color: white;
+}
 .formDetailindash {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-left: 10px;
+    margin-top: 10px;
 }
 
 .userdata {
@@ -90,9 +126,13 @@
 }
 
 .userdata input {
-    margin-top: 0px;
+    margin-top: 10px;
     height: 25px;
     margin-bottom: 10px;
+    padding-left: 5px;
+    border-style: none;
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
 @media only screen and (max-width: 768px) {

@@ -34,7 +34,18 @@ function DashBoard() {
     height: "40px",
     borderRadius: "5px",
   };
-
+  const fillStyletwo = {
+    width: `${(count / 20) * 100}%`,
+    backgroundColor: "blue",
+    height: "40px",
+    borderRadius: "5px",
+  };
+  const fillStylethree= {
+    width: `${(count / 20) * 100}%`,
+    backgroundColor: "yellow",
+    height: "40px",
+    borderRadius: "5px",
+  };
   const toggleBold = () => {
     setIsBold(!isBold);
   };
@@ -62,9 +73,9 @@ function DashBoard() {
         <div className="counterSide">
           <h1>Counter: {count}</h1>
           <div>
-            <button onClick={increment}>Increment</button>
-            <button onClick={decrement}>Decrement</button>
-            <button onClick={reset}>Reset</button>
+            <button onClick={increment} className="btnincre">Increment</button>
+            <button onClick={decrement} className="btnincre">Decrement</button>
+            <button onClick={reset} className="btnincre">Reset</button>
           </div>
         </div>
         <div className="textside">
@@ -78,20 +89,21 @@ function DashBoard() {
             Phone: {formData.number}
           </p>
           <div className="button">
-            <button onClick={toggleBold}>{isBold ? "Normal" : "Bold"}</button>
-            <button onClick={toggleItalic}>{isItalic ? "Normal" : "Italic"}</button>
+            <button onClick={toggleBold} className="btnforit">{isBold ? "Normal" : "Bold"}</button>
+            <button onClick={toggleItalic} className="btnforit">{isItalic ? "Normal" : "Italic"}</button>
           </div>
         </div>
       </div>
       <div className="partone">
         <div className="Userside">
           <div className="userdata">
-            <p>Name : {userName}</p>
-            {uniqueId && <p>ID: {uniqueId}</p>}
+            <p style={{color:"blue"}}>Name : {userName}</p>
+            {uniqueId && <p style={{color:"blue"}}>ID: {uniqueId}</p>}
             <input type="text" placeholder="Name"
+
             onChange={(e) => SetuserName(e.target.value)}
             ></input>
-            <button onClick={handleSubmit}>Create Unique ID</button>
+            <button onClick={handleSubmit} className="uniqueidforid">Create Unique ID</button>
           </div>
         </div>
         <div className="AdressDetails">
@@ -128,6 +140,11 @@ function DashBoard() {
       </div>
       <div className="divforcolor">
         <div style={fillStyle} className="divcolorfill"></div>
+      </div>
+      <div className="divforcolor">
+        <div style={fillStylethree} className="divcolorfill"></div>
+      </div><div className="divforcolor">
+        <div style={fillStyletwo} className="divcolorfill"></div>
       </div>
     </div>
   );
